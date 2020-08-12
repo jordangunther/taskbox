@@ -1,0 +1,21 @@
+// Abstracts
+// Independent reusable items that can be used in partials
+// Global mixins, variables, functions, ect..
+// The order matters Variables first, than Functions than Mixins
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Base
+// Global styles, resets, typographies, utility classes that can be used on all pages
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+// Layout
+// Styles for larger layout components like footers, grids, headers, navigations
+@import 'layout/container';
+@import 'layout/flex';
+@import 'layout/grid';
+
+

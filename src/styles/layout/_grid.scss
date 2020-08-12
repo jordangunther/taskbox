@@ -1,0 +1,82 @@
+.l-grid {
+    display: grid;
+    grid-gap: (30px);
+    justify-content: center;
+    align-items: center;
+
+    &--2-col {
+        grid-template-columns: 1fr 1fr;
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &--2-col-fixed {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &--2-col-first-long {
+        grid-template-columns: 2fr 1fr;
+        @include respond(tab-land) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &--2-col-first-long-fixed {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    &--2-col-second-long {
+        grid-template-columns: 1fr 2fr;
+        @include respond(tab-land) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &--2-col-second-long-fixed {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    &--3-col {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &--3-col-fixed {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    &--4-col {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &--4-col-fixed {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &__item {
+        &--align-center {
+            align-self: center;
+        }
+        &--justify-center {
+            justify-self: center;
+        }
+    }
+}
+
+
+

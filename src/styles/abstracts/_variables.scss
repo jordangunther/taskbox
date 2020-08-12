@@ -1,0 +1,63 @@
+//Fonts
+$default-font-size: rem(16px);
+
+//Font Weights
+$font-weight-demi: 600;
+$font-weight-medium: 500;
+//Borders
+$border-width: 2px;
+
+//Colors
+$base-font-size: 10px;
+
+$enso-black: #181818;
+$white: #FFFFFF;
+$white-focus: #FAFBFB;
+$gray: #8E8E8E;
+
+$navy: #022840;
+$sand: #F1CDAD;
+$cyan: #04BEBE;
+
+$navy-tint-2-percent: #F9FAFB;
+$navy-tint-20-percent: #CCD4D9;
+$sand-tint-10-percent: #FEFAF6;
+
+$primary: $navy;
+$primary-hover: #012136;
+$primary-focus: #011A2C;
+$secondary: $sand;
+$accent: $cyan;
+
+//theme definition
+$themes: (
+        default: (
+                'primary': (
+                        'base': $primary,
+                        'hover': $primary,
+                ),
+                'secondary': (
+                        'base': $secondary,
+                        'hover': $secondary,
+                ),
+                'accent': (
+                        'base': $accent,
+                        'hover': $accent,
+                ),
+                'foreground': (
+                        'base': $primary,
+                        'hover': $primary-hover,
+                        'focus': $primary-focus,
+                        'light': $primary-focus,
+                        'x-light': $primary-focus,
+                        'white': $white,
+                        'white-focus': $white,
+                ),
+                'background': (
+                        'base': $navy-tint-2-percent,
+                        'x-light': $navy-tint-2-percent,
+                        'light': $sand-tint-10-percent,
+                        'dark': $navy-tint-20-percent,
+                )
+        ),
+);

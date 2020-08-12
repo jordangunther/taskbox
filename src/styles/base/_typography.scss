@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: $default-font-size; //1.6rem or 16px
+}
+
+//Fonts
+@font-face {
+  font-family: 'Futura';
+  src: url('~@/fonts/Futura/Futura PT Book.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('~@/fonts/Futura/Futura PT Demi.otf') format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('~@/fonts/Futura/Futura PT Medium.otf') format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiveBoroughs';
+  src: url('~@/fonts/FiveBoroughs/FiveBoroughs.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Headings
+.t-heading-1 {
+  font-family: Futura;
+  font-size: rem(65px);
+  line-height: rem(70px);
+  letter-spacing: rem(.5px);
+  font-weight: $font-weight-demi;
+
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-heading-2 {
+  font-family: Futura;
+  font-size: rem(52px);
+  line-height: rem(58px);
+  letter-spacing: rem(1.2px);
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-heading-3 {
+  font-family: Futura;
+  font-size: rem(36px);
+  line-height: rem(44px);
+  letter-spacing: rem(0.28px);
+  font-weight: $font-weight-demi;
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-heading-4 {
+  font-family: Futura;
+  font-size: rem(33px);
+  line-height: rem(42px);
+  letter-spacing: rem(2.2px);
+  font-weight: $font-weight-medium;
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-heading-5 {
+  font-family: Futura;
+  font-size: rem(30px);
+  line-height: rem(38px);
+  letter-spacing: rem(2px);
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-heading-6 {
+  font-family: Futura;
+  font-size: rem(18px);
+  line-height: rem(22px);
+  letter-spacing: rem(1px);
+  font-weight: $font-weight-medium;
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-heading-7 {
+  font-family: Futura;
+  font-size: rem(16px);
+  line-height: rem(21px);
+  letter-spacing: rem(2px);
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-heading-8 {
+  font-family: Futura;
+  font-size: rem(15px);
+  line-height: rem(21px);
+  letter-spacing: rem(1.88px);
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-heading-9 {
+  font-family: Futura;
+  font-size: rem(14px);
+  line-height: rem(27px);
+  letter-spacing: rem(0.44px);
+  font-weight: $font-weight-medium;
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-heading-10 {
+  font-family: Futura;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.83px;
+  font-weight: $font-weight-medium;
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-paragraph {
+  font-family: Futura;
+  font-size: rem(14px);
+  line-height: rem(27px);
+  letter-spacing: rem(0.44px);
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-paragraph-large {
+  font-family: Futura;
+  font-size: rem(18px);
+  line-height: rem(25px);
+  letter-spacing: rem(0.55px);
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}
+
+.t-paragraph-small {
+  font-family: Futura;
+  font-size: 12px;
+  line-height: rem(22px);
+  letter-spacing: rem(0.38px);
+  @include themify($themes) {
+    color: themed('foreground');
+  }
+
+  &--white {
+    @include themify($themes) {
+      color: themed('foreground', 'white');
+    }
+  }
+}

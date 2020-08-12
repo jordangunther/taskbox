@@ -1,0 +1,17 @@
+@import "variables";
+
+@function rem($target, $context: $base-font-size) {
+  @return ($target / $context) * 1rem;
+}
+
+// return color from theme
+//used in the themify mixin
+@function themed($key: 'primary', $variant: 'base') {
+  //retrieve theme color default primary for each theme
+  $map: map-get($theme-map, $key);
+  //return theme color variant default primary base for each theme
+  //variant options are base, light, and dark.
+  //source is $themes
+  @return map-get($map, $variant);
+}
+

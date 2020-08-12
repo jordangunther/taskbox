@@ -1,0 +1,40 @@
+//Text
+.u-center-text { text-align: center !important; }
+
+//Spacing
+.u-margin-bottom-none { margin-bottom: 0 !important; }
+.u-margin-bottom-x-small { margin-bottom: rem(10px) !important; }
+.u-margin-bottom-small { margin-bottom: rem(15px) !important; }
+.u-margin-bottom-medium { margin-bottom: rem(20px) !important; }
+.u-margin-bottom-large { margin-bottom: rem(30px) !important; }
+.u-margin-bottom-x-large { margin-bottom: rem(50px) !important; }
+
+//Dimensions
+.u-100-height {
+  height: 100% !important;
+}
+.u-100-width {
+  width: 100% !important;
+}
+
+//hidden
+.u-hidden-tab-land {
+  @include respond(tab-land) {
+    display: none !important;
+  }
+}
+
+//Display
+.u-visible-tab-land {
+  display: none !important;
+  @include respond(tab-land) {
+    display: block !important;
+  }
+
+  &--inline-block {
+    @include respond(tab-land) {
+      display: inline-block !important;
+    }
+  }
+}
+
